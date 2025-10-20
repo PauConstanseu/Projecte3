@@ -61,6 +61,10 @@ Aprendràs a:
 
 ---
 
+- [Enllaç directe al planner](https://planner.cloud.microsoft/webui/v1/plan/3i64x5Z-bkiYp3X-D_0r1JYAAY5M?tid=c7b5981a-7820-4ac8-ae65-03515ea81317)
+
+---
+
 ## 📁 Tasques
 Aquestes seran les tasques que hi haurà en aquest projecte.  
 > **Nota:** aquest apartat s’anirà actualitzant progressivament.
