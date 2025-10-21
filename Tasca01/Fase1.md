@@ -1,22 +1,8 @@
 **Fase 1: Anàlisi i justificació**
 
-**Index:**
-
-[**1\. Introducció i justificació	1**](#introducció-i-justificació)
-
-[**2\. Comparativa tècnic	1**](#comparativa-tècnic)
-
-[**3\. Avantatges i inconvenients	2**](#avantatges-i-inconvenients)
-
-[Bitwarden (Online)	2](#bitwarden-\(online\))
-
-[KeePassXC (Offline)	2](#keepassxc-\(offline\))
-
-[**4\. Recomanació final	2**](#recomanació-final)
-
 ---
 
-1. # **Introducció i justificació** {#introducció-i-justificació}
+1. # **Introducció i justificació**
 
 L’incident de seguretat a EverPia ha evidenciat una vulnerabilitat crítica: l’ús de contrasenyes febles o reutilitzades. Aquestes pràctiques exposen l’empresa a:
 
@@ -28,7 +14,7 @@ Un gestor de contrasenyes permet mitigar aquests riscos generant contrasenyes fo
 
 ---
 
-2. # **Comparativa tècnic** {#comparativa-tècnic}
+2. # **Comparativa tècnic**
 
 | Característica | Bitwarden (online) | KeePassX (offline) |
 | :---- | :---- | :---- |
@@ -43,7 +29,7 @@ Un gestor de contrasenyes permet mitigar aquests riscos generant contrasenyes fo
 
 ---
 
-3. # **Avantatges i inconvenients** {#avantatges-i-inconvenients}
+3. # **Avantatges i inconvenients**
 
 #### **Bitwarden (Online)** {#bitwarden-(online)}
 
@@ -73,6 +59,6 @@ Un gestor de contrasenyes permet mitigar aquests riscos generant contrasenyes fo
 * Risc de pèrdua si no es fa còpia de seguretat.  
   ---
 
-4. # **Recomanació final** {#recomanació-final}
+4. # **Recomanació final**
 
 Es recomana Bitwarden com a gestor principal per al personal tècnic d’EverPia per la seva seguretat, facilitat d’ús i capacitat de sincronització. L’opció d’autoallotjament permet mantenir el control intern de les dades. KeePassXC pot ser una alternativa complementària en entorns on no es permet l’ús del núvol.
