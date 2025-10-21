@@ -24,6 +24,10 @@ Aquesta tasca individual té com a objectiu avaluar tècnicament les opcions dis
 - Gestió de còpies de seguretat.
 - Captures de pantalla explicatives (ubicades a la carpeta `img/`).
 
+---
+
+## Enllaços directes
+
 [Enllaç directe al informe](/Tasca01/informe.md)
 
 [Enllaç directe a la guia](/Tasca01/guia.md)
