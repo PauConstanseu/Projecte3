@@ -31,7 +31,7 @@ Un gestor de contrasenyes permet mitigar aquests riscos generant contrasenyes fo
 
 ## 3. **Avantatges i inconvenients**
 
-#### **Bitwarden (Online)** {#bitwarden-(online)}
+#### **Bitwarden (Online)**
 
 **Avantatges:**
 
@@ -44,7 +44,7 @@ Un gestor de contrasenyes permet mitigar aquests riscos generant contrasenyes fo
 * Dependència del núvol (si no s’autoallotja).  
 * Potencials riscos si el servei és compromès (tot i el xifratge).
 
-#### **KeePassXC (Offline)** {#keepassxc-(offline)}
+#### **KeePassXC (Offline)**
 
 **Avantatges:**
 
