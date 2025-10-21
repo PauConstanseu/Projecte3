@@ -66,6 +66,8 @@ Aprendràs a:
 ---
 
 ## 📁 Tasques
-Aquestes seran les tasques que hi haurà en aquest projecte.  
+Aquestes seran les tasques que hi haurà en aquest projecte.
+
+Tasca 1- [Enllaç directe a la tasca 1](/Tasca01)
 > **Nota:** aquest apartat s’anirà actualitzant progressivament.
 
