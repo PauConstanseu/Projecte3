@@ -63,5 +63,6 @@ Un gestor de contrasenyes permet mitigar aquests riscos generant contrasenyes fo
 
 Es recomana Bitwarden com a gestor principal per al personal tècnic d’EverPia per la seva seguretat, facilitat d’ús i capacitat de sincronització. L’opció d’autoallotjament permet mantenir el control intern de les dades. KeePassXC pot ser una alternativa complementària en entorns on no es permet l’ús del núvol.
 
+---
 
 [Enllaç directe a la guia](/Tasca01/guia.md)
