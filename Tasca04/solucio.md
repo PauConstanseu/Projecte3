@@ -51,7 +51,7 @@ Un cop editat, el guardarem i executarem la comanda **sudo netplan apply**, tot 
 
 Per continuar amb el SSH, obrirem el nostre terminal de Windows i escriurem la següent comanda: **ssh (el nom d’usuari que tinguis)@(la ip que tinguis), en el meu cas, ssh usuari@192.168.56.101** i fet això ja podriem utilitzar ssh i fer servir el servidor remotament desde el nostre equip. En cas de que no hagueu pogut o no us hagi deixat, reviseu que teniu ssh instal·lat al vostre servidor.
 
-### **3.1 Instal·lació i Configuració Base d'OpenLDAP**
+### **2.1 Instal·lació i Configuració Base d'OpenLDAP**
 
 Seguirem amb la instal·lació del servei OpenLDAP, per instal·lar-ho utilitzarem aquesta comanda:
 
@@ -113,4 +113,113 @@ I seguidament farem una consulta amb **ldapsearch** que es mostrin les OUs.
 
 ---
 
-### **3.2 Gestió i Administració (LAM)**
+### **2.2 Gestió i Administració (LAM)**
+
+Primer de tot farem la instal·lació del LDAP Account Manager:
+
+![Captura21](/Tasca04/img/captura21.png)
+
+Un cop ho tinguem instal·lat, anirem al nostre navegador i posarem http://192.168.56.101/lam (la IP poses la que tinguis tu, aquest és el meu cas), li donarem a dalt a la dreta on posa **LAM configuration** i després a **Edit server profiles** i la contrasenya és lam i un cop fet tot això ja estarem dins.
+
+![Captura22](/Tasca04/img/captura22.png)
+
+Ara el que farem és establir la configuració per defecte per què els usuaris nous s’ubiquin a l’OU users i els grups nous a l’OU groups.
+
+Per fer-ho anairam a l’apartat de tipos de cuentas i l’editarem de la següent manera:
+
+![Captura23](/Tasca04/img/captura23.png)
+
+Una vegada ja ho tinguem tot canviat i bé, crearem dos grups de seguretat al directori: **tech i manager**.
+
+Per fer-ho anirem a l’apartat de **Cuentas** i després a **Grupos**.
+
+![Captura24](/Tasca04/img/captura24.png)
+
+Seguidament li donarem a Nuevo Grupo
+
+![Captura25](/Tasca04/img/captura25.png)
+
+I el creem amb el seu corresponent nom:
+
+![Captura26](/Tasca04/img/captura26.png)
+
+Ara crearem un usuari per cada un d’aquests grups: **tech01 i manager01**.
+
+Per fer-ho anirem a **Cuentas** i després a **Usuarios**.
+
+![Captura27](/Tasca04/img/captura27.png)
+
+I els crearem seguint els criteris que ens demanen.
+
+![Captura28](/Tasca04/img/captura28.png)
+
+---
+
+### **3. Integració de Client (Client Ubuntu Desktop)**
+
+Per fer aquesta part necessitarem instalar un client en una màquina amb Zorin OS amb dos adaptadors de xarxa, el primer en Xarxa NAT i el segon en només amfitrió.
+
+![Captura29](/Tasca04/img/captura29.png)
+![Captura30](/Tasca04/img/captura30.png)
+
+Un cop dins la màquina, el primer que farem serà editar l’arxiu d'hosts, jo ho faré a partir de ssh.
+
+![Captura31](/Tasca04/img/captura31.png)
+
+L’editem d’aquesta manera i tot seguit farem una instantánea de la máquina.
+
+![Captura32](/Tasca04/img/captura32.png)
+
+Comprovarem que els noms estiguin bé:
+
+![Captura33](/Tasca04/img/captura33.png)
+
+Ara el que farem serà comprovar la connectivitat amb el servidor fent una consulta ldapsearch des del client.
+
+Per tant, instal·larem LDAP en el client:
+
+![Captura34](/Tasca04/img/captura34.png)
+
+I seguidament posarem aquesta comanda: **ldapsearch -x -H ldap://server.innovatech03.test:389 -b "dc=innovatech03,dc=test"**
+
+![Captura35](/Tasca04/img/captura35.png)
+
+Un cop comprovada la connectivitat, instal·larem els mòduls necessaris per permetre l'autenticació amb LDAP.
+
+Utilitzarem la comanda: **apt install libnss-ldap libpam-ldap ldap-utils nscd -y**, un cop executada, sens obrirà un menu, posarem el següent:
+
+![Captura36](/Tasca04/img/captura36.png)
+
+Li donam a aceptar,
+
+![Captura37](/Tasca04/img/captura37.png)
+
+Aquesta la posem així i li tornem a donar a aceptar,
+
+![Captura38](/Tasca04/img/captura38.png)
+
+Aquí posarem el 3,
+
+![Captura39](/Tasca04/img/captura39.png)
+
+Aquí posem Sí,
+
+![Captura40](/Tasca04/img/captura40.png)
+
+Aquí posem No,
+
+![Captura41](/Tasca04/img/captura41.png)
+
+Això ho editem d’aquesta forma,
+
+![Captura42](/Tasca04/img/captura42.png)
+
+I aquí posarem una contrasenya.
+
+Fet això, ara modificarem els arxius de configuració del client, per tant, entrarem al arxiu **nsswitch.conf** i l’editarem de la següent forma per indicar que s’usarà ldap per usuaris i grups.
+
+![Captura43](/Tasca04/img/captura43.png)
+
+Seguidament anirem a l’arxiu **/etc/pam.d/common-password** i eliminem el **use_authtok**:
+
+![Captura44](/Tasca04/img/captura44.png)
