@@ -70,8 +70,6 @@ Aquestes seran les tasques que hi haurà en aquest projecte.
 
 Tasca 1- [Enllaç directe a la tasca 1](/Tasca01)
 
-Tasca 2- [Enllaç directe a la tasca 2](/Tasca02)
-
 Tasca 3- [Enllaç directe a la tasca 3](/Tasca03)
 
 Tasca 4- [Enllaç directe a la tasca 4](/Tasca04)
@@ -80,10 +78,5 @@ Tasca 5- [Enllaç directe a la tasca 5](/Tasca05)
 
 Tasca 6- [Enllaç directe a la tasca 6](/Tasca06)
 
-Tasca 7- [Enllaç directe a la tasca 7](/Tasca07)
-
-Tasca 8- [Enllaç directe a la tasca 8](/Tasca08)
-
-Producte 3- [Enllaç directe al producte 3](/Producte03)
 > **Nota:** aquest apartat s’anirà actualitzant progressivament.
 
