@@ -78,5 +78,7 @@ Tasca 5- [Enllaç directe a la tasca 5](/Tasca05)
 
 Tasca 6- [Enllaç directe a la tasca 6](/Tasca06)
 
+Producte 7- [Enllaç directe al producte 7](/Producte07)
+
 > **Nota:** aquest apartat s’anirà actualitzant progressivament.
 
