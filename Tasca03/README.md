@@ -62,3 +62,8 @@ El projecte ha de demostrar la capacitat de l’equip per:
 
 ## Recursos del projecte
 
+- [Carpeta d'imatges](/Tasca03/img)
+
+- [Solució Windows](/Tasca03/windows_storage.md)
+
+- [Solució Linux](/Tasca03/linux_lvm.md)
