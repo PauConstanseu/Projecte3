@@ -223,3 +223,31 @@ Fet això, ara modificarem els arxius de configuració del client, per tant, ent
 Seguidament anirem a l’arxiu **/etc/pam.d/common-password** i eliminem el **use_authtok**:
 
 ![Captura44](/Tasca04/img/captura44.png)
+
+Després d’això, entrarem a l’arxiu **/etc/pam.d/common-session** i afegirem la línia indicada:
+
+![Captura45](/Tasca04/img/captura45.png)
+
+Un cop fet, reiniciarem el servei
+
+![Captura46](/Tasca04/img/captura46.png)
+
+I seguidament fem la comanda **getent passwd | tail** per comprovar que veu els usuaris LDAP
+
+![Captura47](/Tasca04/img/captura47.png)
+
+El que farem després serà entrar a l’arxiu **/etc/pam.d/gdm-launch-environment** desde el client i afegirem la següent línia:
+
+![Captura48](/Tasca04/img/captura48.png)
+
+Ara reiniciem el client i provem a iniciar sessió amb l’usuari tech01.
+
+Al entrar li donarem a aquí:
+
+![Captura49](/Tasca04/img/captura49.png)
+
+Posarem el nom del nostre usuari, en el meu cas tech01, i posarem la seva contrasenya.
+
+Un cop dins comprovem que se li ha creat la carpeta personal i comprovem l’usuari.
+
+![Captura50](/Tasca04/img/captura50.png)
