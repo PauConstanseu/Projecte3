@@ -9,3 +9,5 @@ El vídeo pretén mostrar:
 - **Exemples pràctics** per entendre el procés.
 
 Amb aquesta tasca hem pogut reforçar conceptes teòrics i aplicar-los en un format audiovisual que facilita l’aprenentatge.
+
+[Enllaç al vídeo](/Producte06/enllaç_al_video.md)
