@@ -25,3 +25,4 @@ Com a part d’aquesta formació, caldrà que elaboreu un material formatiu pel 
 ### **Activitat de la fase teòrica**
 Un cop domineu aquests conceptes, caldrà que prepareu la vostra **píndola formativa**, que consistirà en un **vídeo d’entre 10 i 15 minuts**, que haurà d’explicar de forma breu però clara aquests conceptes.
 
+[Enllaç directe al vídeo](/Tasca06/activitats/video.md)
